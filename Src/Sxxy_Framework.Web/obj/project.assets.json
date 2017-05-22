@@ -10792,18 +10792,18 @@
     },
     "Sxxy_Framework.Model/1.0.0": {
       "type": "project",
-      "path": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Model/Sxxy_Framework.Model.csproj",
-      "msbuildProject": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Model/Sxxy_Framework.Model.csproj"
+      "path": "../Sxxy_Framework.Model/Sxxy_Framework.Model.csproj",
+      "msbuildProject": "../Sxxy_Framework.Model/Sxxy_Framework.Model.csproj"
     },
     "Sxxy_Framework.Repository/1.0.0": {
       "type": "project",
-      "path": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Repository/Sxxy_Framework.Repository.csproj",
-      "msbuildProject": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Repository/Sxxy_Framework.Repository.csproj"
+      "path": "../Sxxy_Framework.Repository/Sxxy_Framework.Repository.csproj",
+      "msbuildProject": "../Sxxy_Framework.Repository/Sxxy_Framework.Repository.csproj"
     },
     "Sxxy_Framework.Service/1.0.0": {
       "type": "project",
-      "path": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Service/Sxxy_Framework.Service.csproj",
-      "msbuildProject": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Service/Sxxy_Framework.Service.csproj"
+      "path": "../Sxxy_Framework.Service/Sxxy_Framework.Service.csproj",
+      "msbuildProject": "../Sxxy_Framework.Service/Sxxy_Framework.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10821,7 +10821,6 @@
       "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 1.1.0",
       "Sxxy_Framework.DataAccess >= 1.0.0",
-      "Sxxy_Framework.Repository >= 1.0.0",
       "Sxxy_Framework.Service >= 1.0.0"
     ]
   },
@@ -10845,11 +10844,8 @@
             "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj": {
               "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj"
             },
-            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj": {
-              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj"
-            },
-            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Repository\\Sxxy_Framework.Repository.csproj": {
-              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Repository\\Sxxy_Framework.Repository.csproj"
+            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj": {
+              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj"
             }
           }
         }

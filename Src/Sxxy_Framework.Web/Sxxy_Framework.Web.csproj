@@ -105,8 +105,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Solution\Sxxy_Framework.All\Sxxy_Framework.Repository\Sxxy_Framework.Repository.csproj" />
-    <ProjectReference Include="..\..\Solution\Sxxy_Framework.All\Sxxy_Framework.Service\Sxxy_Framework.Service.csproj" />
     <ProjectReference Include="..\Sxxy_Framework.DataAccess\Sxxy_Framework.DataAccess.csproj" />
+    <ProjectReference Include="..\Sxxy_Framework.Service\Sxxy_Framework.Service.csproj" />
   </ItemGroup>
 </Project>

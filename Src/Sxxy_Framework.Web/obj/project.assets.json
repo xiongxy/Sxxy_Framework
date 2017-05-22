@@ -969,7 +969,7 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/1.1.1": {
+      "Microsoft.EntityFrameworkCore/1.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Caching.Memory": "1.1.1",
@@ -4146,6 +4146,40 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Sxxy_Framework.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.1.2",
+          "Microsoft.NETCore.App": "1.1.1",
+          "Sxxy_Framework.Model": "1.0.0"
+        }
+      },
+      "Sxxy_Framework.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.1.2",
+          "Microsoft.NETCore.App": "1.1.1"
+        }
+      },
+      "Sxxy_Framework.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.1",
+          "Sxxy_Framework.DataAccess": "1.0.0",
+          "Sxxy_Framework.Model": "1.0.0"
+        }
+      },
+      "Sxxy_Framework.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.1",
+          "Sxxy_Framework.Repository": "1.0.0"
+        }
       }
     }
   },
@@ -4930,16 +4964,16 @@
         "microsoft.dotnet.platformabstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/1.1.1": {
-      "sha512": "+1IKFiA3wdcEcvcpvAQ2+WF3tkw4lEkOsjOFF198Bb+7YJdDl7FrhztWvRNeqafydHaFwKTp1qgMsWUM3uhVvg==",
+    "Microsoft.EntityFrameworkCore/1.1.2": {
+      "sha512": "2oY1cQ3DEhpbRjlDBE1zb7IngKyPC4fslAX5WL1mnVQOLX/8BPOAjgYM2inzNK2z8ld/DxBUZEwc3xfNc8qhbw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/1.1.1",
+      "path": "microsoft.entityframeworkcore/1.1.2",
       "files": [
         "lib/net451/Microsoft.EntityFrameworkCore.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.1.1.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.1.1.2.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
@@ -10750,6 +10784,26 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Sxxy_Framework.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Sxxy_Framework.DataAccess/Sxxy_Framework.DataAccess.csproj",
+      "msbuildProject": "../Sxxy_Framework.DataAccess/Sxxy_Framework.DataAccess.csproj"
+    },
+    "Sxxy_Framework.Model/1.0.0": {
+      "type": "project",
+      "path": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Model/Sxxy_Framework.Model.csproj",
+      "msbuildProject": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Model/Sxxy_Framework.Model.csproj"
+    },
+    "Sxxy_Framework.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Repository/Sxxy_Framework.Repository.csproj",
+      "msbuildProject": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Repository/Sxxy_Framework.Repository.csproj"
+    },
+    "Sxxy_Framework.Service/1.0.0": {
+      "type": "project",
+      "path": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Service/Sxxy_Framework.Service.csproj",
+      "msbuildProject": "../../Solution/Sxxy_Framework.All/Sxxy_Framework.Service/Sxxy_Framework.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10758,13 +10812,17 @@
       "Microsoft.AspNetCore >= 1.1.1",
       "Microsoft.AspNetCore.Mvc >= 1.1.2",
       "Microsoft.AspNetCore.StaticFiles >= 1.1.1",
+      "Microsoft.EntityFrameworkCore >= 1.1.2",
       "Microsoft.EntityFrameworkCore.Design >= 1.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.1",
       "Microsoft.Extensions.Logging.Debug >= 1.1.1",
       "Microsoft.NETCore.App >= 1.1.1",
       "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 1.1.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 1.1.0",
+      "Sxxy_Framework.DataAccess >= 1.0.0",
+      "Sxxy_Framework.Repository >= 1.0.0",
+      "Sxxy_Framework.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10783,7 +10841,17 @@
       ],
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj": {
+              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj"
+            },
+            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj": {
+              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj"
+            },
+            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Repository\\Sxxy_Framework.Repository.csproj": {
+              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Solution\\Sxxy_Framework.All\\Sxxy_Framework.Repository\\Sxxy_Framework.Repository.csproj"
+            }
+          }
         }
       }
     },
@@ -10793,6 +10861,10 @@
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "1.1.1"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "1.1.2"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",

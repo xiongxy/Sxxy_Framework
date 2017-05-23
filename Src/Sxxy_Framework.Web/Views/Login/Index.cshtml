@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Log in</title>
+    <title>欢迎来到Sxxy_Framewok</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -17,19 +17,21 @@
     <link href="~/css/AdminLTE.min.css" rel="stylesheet" />
     <!-- iCheck -->
     <link href="~/css/blue.css" rel="stylesheet" />
-
-
+    <style>
+    </style>
 </head>
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="#"><b>Admin</b>LTE</a>
+            <a href="#" style="display: block;"><b>Sxxy_Framewok</b></a>
+
+            <a href="#" style="display: block;">.Net Core</a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
-            <p class="login-box-msg">Sign in to start your session</p>
+            <p class="login-box-msg">欢迎来到Sxxy_Framewok</p>
             <input type="hidden" id="errorinfo_hi" value="@ViewBag.ErrorInfo">
-            <form asp-controller="Login" asp-action="Index" method="post">
+            <form asp-controller="Login" asp-action="Index" method="post" onsubmit="onSubmit()">
                 <div class="form-group has-feedback">
                     <input asp-for="UserName" type="text" class="form-control" placeholder="请输入用户名">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -68,6 +70,8 @@
     <script src="~/js/icheck.min.js"></script>
     <!-- Layer -->>
     <script src="~/layer/layer.js"></script>
+    <!-- jQuery.cookie -->>
+    @*<script src="~/lib/jquery.cookie/jquery.cookie.js"></script>*@
     <script>
         $(function () {
             $('input').iCheck({

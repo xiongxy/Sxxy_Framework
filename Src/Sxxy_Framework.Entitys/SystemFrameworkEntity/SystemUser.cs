@@ -56,14 +56,26 @@ namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
         /// </summary>
         public int IsDeleted { get; set; }
 
-        ///// <summary>
-        ///// 所属部门实体
-        ///// </summary>
-        //public virtual SystemDepartment Department { get; set; }
+        /// <summary>
+        /// 所属部门实体
+        /// </summary>
+        public SystemDepartment SystemDepartment { get; set; }
 
-        ///// <summary>
-        ///// 角色集合
-        ///// </summary>
-        //public virtual ICollection<SystemRole> Roles { get; set; }
+        /// <summary>
+        /// 所属部门实体
+        /// </summary>
+        public Guid SystemDepartmentId { get; set; }
+
+
+
+        /// <summary>
+        /// 角色
+        /// </summary>
+        public SystemRole SystemRole { get; set; }
+
+        /// <summary>
+        /// 角色
+        /// </summary>
+        public Guid SystemRoleId { get; set; }
     }
 }

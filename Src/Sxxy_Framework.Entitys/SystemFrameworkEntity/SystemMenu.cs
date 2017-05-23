@@ -43,5 +43,17 @@ namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
         /// 菜单备注
         /// </summary>
         public string Remarks { get; set; }
+
+
+        /// <summary>
+        /// 角色
+        /// </summary>
+        public SystemRole SystemRole { get; set; }
+
+        /// <summary>
+        /// 角色
+        /// </summary>
+        public Guid SystemRoleId { get; set; }
+
     }
 }

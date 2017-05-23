@@ -8,4 +8,8 @@
     <ProjectReference Include="..\Sxxy_Framework.Repository\Sxxy_Framework.Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+  </ItemGroup>
+
 </Project>

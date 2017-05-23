@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Sxxy_Framework.Entitys.SystemFrameworkEntity;
+﻿using Sxxy_Framework.Entitys.SystemFrameworkEntity;
 using Sxxy_Framework.Repository.IEntityRepository;
-using Sxxy_Framework.Service.IService;
+using Sxxy_Framework.Service.ISystemService;
 
-namespace Sxxy_Framework.Service.Service
+namespace Sxxy_Framework.Service.SystemService
 {
     public class SystemUserService : ISystemUserService
     {

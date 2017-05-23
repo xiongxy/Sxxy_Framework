@@ -41,9 +41,9 @@ namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
         /// </summary>
         public int IsDeleted { get; set; }
 
-        ///// <summary>
-        ///// 包含用户
-        ///// </summary>
-        //public virtual ICollection<SystemUser> Users { get; set; }
+        /// <summary>
+        /// 包含用户
+        /// </summary>
+        public ICollection<SystemUser> SystemUsers { get; set; }
     }
 }

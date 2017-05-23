@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Sxxy_Framework.Common.ConvertHelper;
-using Sxxy_Framework.Service.IService;
+using Sxxy_Framework.Service.ISystemService;
 using Sxxy_Framework.Web.Model.SystemModels;
 
 namespace Sxxy_Framework.Web.Controllers

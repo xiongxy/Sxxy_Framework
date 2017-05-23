@@ -18,13 +18,13 @@ namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
         /// </summary>
         public string Remarks { get; set; }
 
-        ///// <summary>
-        ///// 角色所拥有用户
-        ///// </summary>
-        //public virtual ICollection<SystemUser> Users { get; set; }
-        ///// <summary>
-        ///// 角色所拥有菜单功能
-        ///// </summary>
-        //public virtual ICollection<SystemMenu> Menus { get; set; }
+        /// <summary>
+        /// 角色所拥有用户
+        /// </summary>
+        public  ICollection<SystemUser> SystemUsers { get; set; }
+        /// <summary>
+        /// 角色所拥有菜单功能
+        /// </summary>
+        public  ICollection<SystemMenu> SystemMenus { get; set; }
     }
 }

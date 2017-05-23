@@ -92,5 +92,40 @@ namespace Sxxy_Framework.Repository
 
             return Expression.Lambda<Func<TEntity, bool>>(lambdaBody, lambdaParam);
         }
+
+
+        /// <summary>
+        /// 根据条件删除实体
+        /// </summary>
+        /// <param name="where">lambda表达式</param>
+        /// <param name="autoSave">是否自动保存</param>
+        void IRepository<TEntity, TPrimaryKey>.Delete(Expression<Func<TEntity, bool>> where, bool autoSave = true)
+        {
+            _dataContent.Set<TEntity>().Where(where).ToList().ForEach(it => _dataContent.Set<TEntity>().Remove(it));
+            //if (autoSave)
+            //Save();
+        }
+        /// <summary>
+        /// 分页查询
+        /// </summary>
+        /// <param name="startPage">页码</param>
+        /// <param name="pageSize">单页数据数</param>
+        /// <param name="rowCount">行数</param>
+        /// <param name="where">条件</param>
+        /// <param name="order">排序</param>
+        /// <returns></returns>
+        IQueryable<TEntity> IRepository<TEntity, TPrimaryKey>.LoadPageList(int startPage, int pageSize, out int rowCount, Expression<Func<TEntity, bool>> where = null, Expression<Func<TEntity, object>> order = null)
+        {
+            var result = from p in _dataContent.Set<TEntity>()
+                         select p;
+            if (where != null)
+                result = result.Where(where);
+            if (order != null)
+                result = result.OrderBy(order);
+            else
+                result = result.OrderBy(m => m.Id);
+            rowCount = result.Count();
+            return result.Skip((startPage - 1) * pageSize).Take(pageSize);
+        }
     }
 }

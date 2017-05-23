@@ -12,8 +12,8 @@ using Microsoft.Extensions.Logging;
 using Sxxy_Framework.DataAccess;
 using Sxxy_Framework.Repository.EntityRepository;
 using Sxxy_Framework.Repository.IEntityRepository;
-using Sxxy_Framework.Service.IService;
-using Sxxy_Framework.Service.Service;
+using Sxxy_Framework.Service.ISystemService;
+using Sxxy_Framework.Service.SystemService;
 
 namespace Sxxy_Framework.Web
 {

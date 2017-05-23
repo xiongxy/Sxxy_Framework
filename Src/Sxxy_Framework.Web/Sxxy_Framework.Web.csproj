@@ -77,6 +77,15 @@
     <Content Include="wwwroot\js\app.min.js" />
     <Content Include="wwwroot\js\icheck.js" />
     <Content Include="wwwroot\js\icheck.min.js" />
+    <Content Include="wwwroot\layer\layer.js" />
+    <Content Include="wwwroot\layer\mobile\layer.js" />
+    <Content Include="wwwroot\layer\mobile\need\layer.css" />
+    <Content Include="wwwroot\layer\skin\default\icon-ext.png" />
+    <Content Include="wwwroot\layer\skin\default\icon.png" />
+    <Content Include="wwwroot\layer\skin\default\layer.css" />
+    <Content Include="wwwroot\layer\skin\default\loading-0.gif" />
+    <Content Include="wwwroot\layer\skin\default\loading-1.gif" />
+    <Content Include="wwwroot\layer\skin\default\loading-2.gif" />
   </ItemGroup>
   <ItemGroup>
     

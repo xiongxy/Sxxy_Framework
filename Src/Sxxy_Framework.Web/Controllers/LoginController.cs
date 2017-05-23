@@ -35,9 +35,10 @@ namespace Sxxy_Framework.Web.Controllers
                     //跳转到系统首页
                     return RedirectToAction("Index", "Home");
                 }
-                ModelState.AddModelError("", "用户名或密码错误。");
+                ViewBag.ErrorInfo = "用户名或密码错误。";
                 return View();
             }
+            ViewBag.ErrorInfo = ModelState.Values.First().Errors[0].ErrorMessage;
             return View(model);
         }
     }

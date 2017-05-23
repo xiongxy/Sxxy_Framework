@@ -1,7 +1,8 @@
 ﻿@{
     Layout = null;
-}
 
+}
+@model LoginModel
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +18,7 @@
     <!-- iCheck -->
     <link href="~/css/blue.css" rel="stylesheet" />
 
+
 </head>
 <body class="hold-transition login-page">
     <div class="login-box">
@@ -26,26 +28,27 @@
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
-            <form action="index" method="post">
+            <input type="hidden" id="errorinfo_hi" value="@ViewBag.ErrorInfo">
+            <form asp-controller="Login" asp-action="Index" method="post">
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="请输入用户名">
+                    <input asp-for="UserName" type="text" class="form-control" placeholder="请输入用户名">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="请输入密码">
+                    <input type="password" asp-for="Password" class="form-control" placeholder="请输入密码">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="checkbox icheck">
                             <label>
-                                <input type="checkbox"> 记 住 我
+                                <input type="checkbox" asp-for="RememberMe"> 记 住 我
                             </label>
                         </div>
                     </div>
                     <!-- /.col -->
                     <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">登 录</button>
+                        <button type="submit" id="btnSubmit" class="btn btn-primary btn-block btn-flat">登 录</button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -63,6 +66,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- iCheck -->
     <script src="~/js/icheck.min.js"></script>
+    <!-- Layer -->>
+    <script src="~/layer/layer.js"></script>
     <script>
         $(function () {
             $('input').iCheck({
@@ -70,6 +75,13 @@
                 radioClass: 'iradio_square-blue',
                 increaseArea: '20%' // optional
             });
+        });
+        $(function () {
+            if ($("#errorinfo_hi").val()) {
+                layer.tips($("#errorinfo_hi").val(), '#btnSubmit', {
+                    tips: [2, '#CC0033']
+                });
+            }
         });
     </script>
 </body>

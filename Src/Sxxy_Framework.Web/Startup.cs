@@ -36,11 +36,13 @@ namespace Sxxy_Framework.Web
         {
 
             services.AddEntityFrameworkSqlServer().AddDbContext<DataContent>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
-            // Add framework services.
+
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddScoped<ISystemUserRepository, SystemUserRepository>();
             services.AddScoped<ISystemUserService, SystemUserService>();
+            // Add Session
+            services.AddSession();
             // Add framework services.
             services.AddMvc();
         }
@@ -62,7 +64,7 @@ namespace Sxxy_Framework.Web
             }
 
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -71,7 +73,7 @@ namespace Sxxy_Framework.Web
             });
 
 
-             DataContent.InitDb(app.ApplicationServices);
+            DataContent.InitDb(app.ApplicationServices);
         }
     }
 }

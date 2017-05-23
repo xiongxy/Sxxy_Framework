@@ -4153,14 +4153,13 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "1.1.2",
           "Microsoft.NETCore.App": "1.1.1",
-          "Sxxy_Framework.Model": "1.0.0"
+          "Sxxy_Framework.Entitys": "1.0.0"
         }
       },
-      "Sxxy_Framework.Model/1.0.0": {
+      "Sxxy_Framework.Entitys/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.1.2",
           "Microsoft.NETCore.App": "1.1.1"
         }
       },
@@ -4170,7 +4169,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": "1.1.1",
           "Sxxy_Framework.DataAccess": "1.0.0",
-          "Sxxy_Framework.Model": "1.0.0"
+          "Sxxy_Framework.Entitys": "1.0.0"
         }
       },
       "Sxxy_Framework.Service/1.0.0": {
@@ -10790,10 +10789,10 @@
       "path": "../Sxxy_Framework.DataAccess/Sxxy_Framework.DataAccess.csproj",
       "msbuildProject": "../Sxxy_Framework.DataAccess/Sxxy_Framework.DataAccess.csproj"
     },
-    "Sxxy_Framework.Model/1.0.0": {
+    "Sxxy_Framework.Entitys/1.0.0": {
       "type": "project",
-      "path": "../Sxxy_Framework.Model/Sxxy_Framework.Model.csproj",
-      "msbuildProject": "../Sxxy_Framework.Model/Sxxy_Framework.Model.csproj"
+      "path": "../Sxxy_Framework.Entitys/Sxxy_Framework.Entitys.csproj",
+      "msbuildProject": "../Sxxy_Framework.Entitys/Sxxy_Framework.Entitys.csproj"
     },
     "Sxxy_Framework.Repository/1.0.0": {
       "type": "project",
@@ -10830,10 +10829,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.Web\\Sxxy_Framework.Web.csproj",
+      "projectUniqueName": "E:\\Code\\MyDownloadCode\\Sxxy_Framework.git\\Src\\Sxxy_Framework.Web\\Sxxy_Framework.Web.csproj",
       "projectName": "Sxxy_Framework.Web",
-      "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.Web\\Sxxy_Framework.Web.csproj",
-      "outputPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.Web\\obj\\",
+      "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework.git\\Src\\Sxxy_Framework.Web\\Sxxy_Framework.Web.csproj",
+      "outputPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework.git\\Src\\Sxxy_Framework.Web\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -10841,11 +10840,11 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj": {
-              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj"
+            "E:\\Code\\MyDownloadCode\\Sxxy_Framework.git\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj": {
+              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework.git\\Src\\Sxxy_Framework.DataAccess\\Sxxy_Framework.DataAccess.csproj"
             },
-            "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj": {
-              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework\\Src\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj"
+            "E:\\Code\\MyDownloadCode\\Sxxy_Framework.git\\Src\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj": {
+              "projectPath": "E:\\Code\\MyDownloadCode\\Sxxy_Framework.git\\Src\\Sxxy_Framework.Service\\Sxxy_Framework.Service.csproj"
             }
           }
         }

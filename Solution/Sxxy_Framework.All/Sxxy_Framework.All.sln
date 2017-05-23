@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sxxy_Framework.Web", "..\..\Src\Sxxy_Framework.Web\Sxxy_Framework.Web.csproj", "{9360273C-E77C-4283-BB3A-FE43E468672C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sxxy_Framework.Web", "..\..\Src\Sxxy_Framework.Web\Sxxy_Framework.Web.csproj", "{9360273C-E77C-4283-BB3A-FE43E468672C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sxxy_Framework.DataAccess", "..\..\Src\Sxxy_Framework.DataAccess\Sxxy_Framework.DataAccess.csproj", "{7BE1C867-A977-427C-AD71-1F1F3962C0DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sxxy_Framework.DataAccess", "..\..\Src\Sxxy_Framework.DataAccess\Sxxy_Framework.DataAccess.csproj", "{7BE1C867-A977-427C-AD71-1F1F3962C0DE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sxxy_Framework.Business", "..\..\Src\Sxxy_Framework.Business\Sxxy_Framework.Business.csproj", "{206D1EDB-E0CB-47A6-9354-792C11417031}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sxxy_Framework.Domain", "..\..\Src\Sxxy_Framework.Domain\Sxxy_Framework.Domain.csproj", "{8C0B3BA2-36CB-4D82-91E2-D1D8AAF17039}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sxxy_Framework.Model", "..\..\Src\Sxxy_Framework.Model\Sxxy_Framework.Model.csproj", "{A14CAD12-B8B1-4E1B-88D2-F2EC412DD397}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sxxy_Framework.Repository", "..\..\Src\Sxxy_Framework.Repository\Sxxy_Framework.Repository.csproj", "{302DAB8D-0781-4479-BAD8-D9E898AEDC41}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sxxy_Framework.Service", "..\..\Src\Sxxy_Framework.Service\Sxxy_Framework.Service.csproj", "{08E1F26B-A9F0-43FF-B616-A451EFBEE80D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sxxy_Framework.Common", "..\..\Src\Sxxy_Framework.Common\Sxxy_Framework.Common.csproj", "{0AE298A5-E721-4481-A80A-FC29D0EAB95A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sxxy_Framework.Entitys", "..\..\Src\Sxxy_Framework.Entitys\Sxxy_Framework.Entitys.csproj", "{F3CAF279-BF0D-44F1-A9DF-7CFFEE30179F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +41,6 @@ Global
 		{8C0B3BA2-36CB-4D82-91E2-D1D8AAF17039}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C0B3BA2-36CB-4D82-91E2-D1D8AAF17039}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C0B3BA2-36CB-4D82-91E2-D1D8AAF17039}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A14CAD12-B8B1-4E1B-88D2-F2EC412DD397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A14CAD12-B8B1-4E1B-88D2-F2EC412DD397}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A14CAD12-B8B1-4E1B-88D2-F2EC412DD397}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A14CAD12-B8B1-4E1B-88D2-F2EC412DD397}.Release|Any CPU.Build.0 = Release|Any CPU
 		{302DAB8D-0781-4479-BAD8-D9E898AEDC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{302DAB8D-0781-4479-BAD8-D9E898AEDC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{302DAB8D-0781-4479-BAD8-D9E898AEDC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +49,14 @@ Global
 		{08E1F26B-A9F0-43FF-B616-A451EFBEE80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E1F26B-A9F0-43FF-B616-A451EFBEE80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E1F26B-A9F0-43FF-B616-A451EFBEE80D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE298A5-E721-4481-A80A-FC29D0EAB95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE298A5-E721-4481-A80A-FC29D0EAB95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE298A5-E721-4481-A80A-FC29D0EAB95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE298A5-E721-4481-A80A-FC29D0EAB95A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CAF279-BF0D-44F1-A9DF-7CFFEE30179F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CAF279-BF0D-44F1-A9DF-7CFFEE30179F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CAF279-BF0D-44F1-A9DF-7CFFEE30179F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CAF279-BF0D-44F1-A9DF-7CFFEE30179F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

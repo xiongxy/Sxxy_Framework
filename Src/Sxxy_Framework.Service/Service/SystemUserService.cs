@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Sxxy_Framework.Model.SystemFrameworkModel;
+using Sxxy_Framework.Entitys.SystemFrameworkEntity;
 using Sxxy_Framework.Repository.IEntityRepository;
 using Sxxy_Framework.Service.IService;
 

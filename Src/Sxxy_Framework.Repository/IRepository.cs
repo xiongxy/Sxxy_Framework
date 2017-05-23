@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Sxxy_Framework.Model;
+using Sxxy_Framework.Entitys;
 
 namespace Sxxy_Framework.Repository
 {

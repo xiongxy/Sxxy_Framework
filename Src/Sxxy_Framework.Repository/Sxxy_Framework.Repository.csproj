@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sxxy_Framework.DataAccess\Sxxy_Framework.DataAccess.csproj" />
-    <ProjectReference Include="..\Sxxy_Framework.Model\Sxxy_Framework.Model.csproj" />
+    <ProjectReference Include="..\Sxxy_Framework.Entitys\Sxxy_Framework.Entitys.csproj" />
   </ItemGroup>
 
 </Project>

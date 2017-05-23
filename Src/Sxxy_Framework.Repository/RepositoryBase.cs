@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Sxxy_Framework.DataAccess;
-using Sxxy_Framework.Model;
+using Sxxy_Framework.Entitys;
 
 namespace Sxxy_Framework.Repository
 {
@@ -14,7 +14,7 @@ namespace Sxxy_Framework.Repository
         {
         }
     }
-    public class RepositoryBase<TEntity, TPrimaryKey> : Model.IRepository<TEntity, TPrimaryKey> where TEntity : BaseEntity<TPrimaryKey>
+    public class RepositoryBase<TEntity, TPrimaryKey> : IRepository<TEntity, TPrimaryKey> where TEntity : BaseEntity<TPrimaryKey>
     {
         private readonly DataContent _dataContent;
         public RepositoryBase(DataContent dataContent)
@@ -25,7 +25,7 @@ namespace Sxxy_Framework.Repository
         /// 获取实体集合
         /// </summary>
         /// <returns></returns>
-        List<TEntity> Model.IRepository<TEntity, TPrimaryKey>.GetAllList()
+        List<TEntity> IRepository<TEntity, TPrimaryKey>.GetAllList()
         {
             return _dataContent.Set<TEntity>().ToList();
         }
@@ -34,7 +34,7 @@ namespace Sxxy_Framework.Repository
         /// </summary>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        List<TEntity> Model.IRepository<TEntity, TPrimaryKey>.GetAllList(Expression<Func<TEntity, bool>> predicate)
+        List<TEntity> IRepository<TEntity, TPrimaryKey>.GetAllList(Expression<Func<TEntity, bool>> predicate)
         {
             return _dataContent.Set<TEntity>().Where(predicate).ToList();
         }
@@ -43,36 +43,36 @@ namespace Sxxy_Framework.Repository
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        TEntity Model.IRepository<TEntity, TPrimaryKey>.Get(TPrimaryKey id)
+        TEntity IRepository<TEntity, TPrimaryKey>.Get(TPrimaryKey id)
         {
             return _dataContent.Set<TEntity>().FirstOrDefault(CreateEqualityExpressionForId(id));
         }
-        bool Model.IRepository<TEntity, TPrimaryKey>.Delete(TEntity entity)
+        bool IRepository<TEntity, TPrimaryKey>.Delete(TEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        bool Model.IRepository<TEntity, TPrimaryKey>.Delete(TPrimaryKey id)
+        bool IRepository<TEntity, TPrimaryKey>.Delete(TPrimaryKey id)
         {
             throw new NotImplementedException();
         }
 
-        TEntity Model.IRepository<TEntity, TPrimaryKey>.FirstOrDefault(Expression<Func<TEntity, bool>> predicate)
+        TEntity IRepository<TEntity, TPrimaryKey>.FirstOrDefault(Expression<Func<TEntity, bool>> predicate)
         {
             throw new NotImplementedException();
         }
 
-        TEntity Model.IRepository<TEntity, TPrimaryKey>.Insert(TEntity entity)
+        TEntity IRepository<TEntity, TPrimaryKey>.Insert(TEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        TEntity Model.IRepository<TEntity, TPrimaryKey>.InsertOrUpdate(TEntity entity)
+        TEntity IRepository<TEntity, TPrimaryKey>.InsertOrUpdate(TEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        TEntity Model.IRepository<TEntity, TPrimaryKey>.Update(TEntity entity)
+        TEntity IRepository<TEntity, TPrimaryKey>.Update(TEntity entity)
         {
             throw new NotImplementedException();
         }

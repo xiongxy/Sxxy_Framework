@@ -1,6 +1,7 @@
 ﻿using System;
+using Sxxy_Framework.Entitys;
 
-namespace Sxxy_Framework.Model.SystemFrameworkModel
+namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
 {
     public class SystemMenu : BaseEntity
     {   /// <summary>

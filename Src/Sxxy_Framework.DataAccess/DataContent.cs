@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using Sxxy_Framework.Model.SystemFrameworkModel;
+using Sxxy_Framework.Entitys.SystemFrameworkEntity;
 
 namespace Sxxy_Framework.DataAccess
 {

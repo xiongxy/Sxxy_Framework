@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Sxxy_Framework.Model
+namespace Sxxy_Framework.Entitys
 {
     /// <summary>
     /// 泛型实体基类

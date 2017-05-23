@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
-using Sxxy_Framework.Model;
 
-namespace Sxxy_Framework.Model
+namespace Sxxy_Framework.Entitys
 {
     public interface IRepository<TEntity, in TPrimaryKey> where TEntity : class
     {

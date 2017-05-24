@@ -5,11 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sxxy_Framework.Repository\Sxxy_Framework.Repository.csproj" />
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
+    <ProjectReference Include="..\Sxxy_Framework.Entitys\Sxxy_Framework.Entitys.csproj" />
+    <ProjectReference Include="..\Sxxy_Framework.Repository\Sxxy_Framework.Repository.csproj" />
   </ItemGroup>
 
 </Project>

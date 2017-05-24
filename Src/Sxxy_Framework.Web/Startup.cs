@@ -12,9 +12,9 @@ using Microsoft.Extensions.Logging;
 using Sxxy_Framework.DataAccess;
 using Sxxy_Framework.Repository.EntityRepository;
 using Sxxy_Framework.Repository.IEntityRepository;
+using Sxxy_Framework.Service;
 using Sxxy_Framework.Service.ISystemService;
 using Sxxy_Framework.Service.SystemService;
-
 namespace Sxxy_Framework.Web
 {
     public class Startup
@@ -27,6 +27,7 @@ namespace Sxxy_Framework.Web
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
+            SxxyFrrameworkMapper.Initialize();
             Configuration = builder.Build();
         }
 
@@ -36,9 +37,7 @@ namespace Sxxy_Framework.Web
         {
 
             services.AddEntityFrameworkSqlServer().AddDbContext<DataContent>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
-
             services.AddApplicationInsightsTelemetry(Configuration);
-
             services.AddScoped<ISystemUserRepository, SystemUserRepository>();
             services.AddScoped<ISystemUserService, SystemUserService>();
             // Add Session
@@ -53,7 +52,6 @@ namespace Sxxy_Framework.Web
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -62,7 +60,6 @@ namespace Sxxy_Framework.Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
             app.UseStaticFiles();
             app.UseSession();
             app.UseMvc(routes =>
@@ -71,8 +68,6 @@ namespace Sxxy_Framework.Web
                     name: "default",
                     template: "{controller=Login}/{action=Index}/{id?}");
             });
-
-
             DataContent.InitDb(app.ApplicationServices);
         }
     }

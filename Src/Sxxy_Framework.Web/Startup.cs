@@ -38,8 +38,16 @@ namespace Sxxy_Framework.Web
 
             services.AddEntityFrameworkSqlServer().AddDbContext<DataContent>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
             services.AddApplicationInsightsTelemetry(Configuration);
-            services.AddScoped<ISystemUserRepository, SystemUserRepository>();
+
+
+
+            services.AddScoped<Repository.IEntityRepository.ISystemUserRepository, SystemUserRepository>();
             services.AddScoped<ISystemUserService, SystemUserService>();
+
+
+
+
+
             // Add Session
             services.AddSession();
             // Add framework services.

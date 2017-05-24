@@ -59,7 +59,7 @@ namespace Sxxy_Framework.Repository
 
         TEntity IRepository<TEntity, TPrimaryKey>.FirstOrDefault(Expression<Func<TEntity, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _dataContent.Set<TEntity>().FirstOrDefault(predicate);
         }
 
         TEntity IRepository<TEntity, TPrimaryKey>.Insert(TEntity entity)

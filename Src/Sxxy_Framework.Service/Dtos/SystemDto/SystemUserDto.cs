@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using Sxxy_Framework.Entitys;
+using System.Text;
 
-namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
+namespace Sxxy_Framework.Service.Dtos.SystemDto
 {
-    public class SystemUser : BaseEntity
-    {
-        /// <summary>
+    public class SystemUserDto
+    {    /// <summary>
         /// 用户名
         /// </summary>
         public string UserName { get; set; }
-
-        /// <summary>
-        /// 密码
-        /// </summary>
-        public string Password { get; set; }
 
         /// <summary>
         /// 用户姓名
@@ -59,18 +53,17 @@ namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
         /// <summary>
         /// 所属部门实体
         /// </summary>
-        public SystemDepartment SystemDepartment { get; set; }
+        public SystemDepartmentDto SystemDepartment { get; set; }
 
         /// <summary>
         /// 所属部门实体
         /// </summary>
         public Guid SystemDepartmentId { get; set; }
 
-
         /// <summary>
         /// 角色
         /// </summary>
-        public SystemRole SystemRole { get; set; }
+        public SystemRoleDto SystemRole { get; set; }
 
         /// <summary>
         /// 角色

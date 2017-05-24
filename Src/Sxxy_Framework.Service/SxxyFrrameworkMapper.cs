@@ -15,6 +15,17 @@ namespace Sxxy_Framework.Service
             {
                 cfg.CreateMap<SystemMenu, SystemMenuDto>();
                 cfg.CreateMap<SystemMenuDto, SystemMenu>();
+
+                cfg.CreateMap<SystemUser, SystemUserDto>();
+                cfg.CreateMap<SystemUserDto, SystemUser>();
+
+                cfg.CreateMap<SystemDepartment, SystemDepartmentDto>();
+                cfg.CreateMap<SystemDepartmentDto, SystemDepartment>();
+
+                cfg.CreateMap<SystemRole, SystemRoleDto>();
+                cfg.CreateMap<SystemRoleDto, SystemRole>();
+
+
             });
         }
     }

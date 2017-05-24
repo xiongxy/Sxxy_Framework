@@ -4,7 +4,7 @@ using System.Text;
 using Sxxy_Framework.Entitys.SystemFrameworkEntity;
 namespace Sxxy_Framework.Repository.IEntityRepository
 {
-    public interface ISystemMenuRepository : IRepository<SystemMenu>
+    public interface ISystemDepartmentRepository : IRepository<SystemDepartment>
     {
     }
 }

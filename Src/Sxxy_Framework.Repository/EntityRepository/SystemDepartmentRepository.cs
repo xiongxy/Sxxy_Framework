@@ -11,9 +11,9 @@ namespace Sxxy_Framework.Repository.EntityRepository
     /// <summary>
     /// 用户管理仓储接口
     /// </summary>
-    public class SystemUserRepository : RepositoryBase<SystemUser>, ISystemUserRepository
+    public class SystemDepartmentRepository : RepositoryBase<SystemDepartment>, ISystemDepartmentRepository
     {
-        public SystemUserRepository(DataContent dataContent) : base(dataContent)
+        public SystemDepartmentRepository(DataContent dataContent) : base(dataContent)
         {
         }
     }

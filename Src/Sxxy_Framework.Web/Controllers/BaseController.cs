@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Sxxy_Framework.Web.Controllers
 {
-    public class BaseController : Controller
+    public abstract class BaseController : Controller
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {

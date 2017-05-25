@@ -7,7 +7,8 @@ using Sxxy_Framework.Common.ConvertHelper;
 using Sxxy_Framework.Service.ISystemService;
 using Sxxy_Framework.Web.Model.SystemModels;
 
-namespace Sxxy_Framework.Web.Controllers
+namespace Sxxy_Framework.Web.Controllers.Framework
+
 {
     public class LoginController : Controller
     {

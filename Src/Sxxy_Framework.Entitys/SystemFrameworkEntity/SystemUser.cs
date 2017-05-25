@@ -36,20 +36,10 @@ namespace Sxxy_Framework.Entitys.SystemFrameworkEntity
         /// </summary>
         public string Remarks { get; set; }
 
-        /// <summary>
-        /// 上次登录时间
-        /// </summary>
-        public DateTime LastLoginTime { get; set; }
-
-        /// <summary>
-        /// 登录次数
-        /// </summary>
-        public int LoginTimes { get; set; }
-
-        /// <summary>
-        /// 部门ID
-        /// </summary>
-        public Guid DeptmentId { get; set; }
+        ///// <summary>
+        ///// 上次登录时间
+        ///// </summary>
+        //public DateTime? LastLoginTime { get; set; }
 
         /// <summary>
         /// 是否已删除

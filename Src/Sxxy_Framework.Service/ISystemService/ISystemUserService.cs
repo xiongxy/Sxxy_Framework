@@ -6,5 +6,7 @@ namespace Sxxy_Framework.Service.ISystemService
     public interface ISystemUserService
     {
         SystemUserDto CheckUser(string userName, string password);
+
+        SystemUserDto GetUser(string userName);
     }
 }

@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using Sxxy_Framework.Entitys.SystemFrameworkEntity;
 using Sxxy_Framework.Repository.IEntityRepository;
 using Sxxy_Framework.Service.Dtos.SystemDto;
@@ -25,5 +26,9 @@ namespace Sxxy_Framework.Service.SystemService
             return Mapper.Map<SystemUserDto>(_repository.FirstOrDefault(x => x.UserName == userName && x.Password == password));
         }
 
+        public SystemUserDto GetUser(string userName)
+        {
+            return Mapper.Map<SystemUserDto>(_repository.FirstOrDefault(x => x.UserName == userName));
+        }
     }
 }

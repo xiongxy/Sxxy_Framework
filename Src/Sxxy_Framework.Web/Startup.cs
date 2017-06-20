@@ -47,7 +47,6 @@ namespace Sxxy_Framework.Web
 
 
 
-
             // Add Session
             services.AddSession();
             // Add framework services.

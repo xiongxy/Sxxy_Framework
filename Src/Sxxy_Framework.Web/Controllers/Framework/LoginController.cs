@@ -20,7 +20,12 @@ namespace Sxxy_Framework.Web.Controllers.Framework
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            var user = _systemUserService.GetUser("admin");
+            LoginModel loginModel = new LoginModel()
+            {
+                UserName = user.Name
+            };
+            return View(loginModel);
         }
         [HttpPost]
         public IActionResult Index(LoginModel model)
